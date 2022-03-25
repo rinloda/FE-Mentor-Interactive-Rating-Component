@@ -1,11 +1,11 @@
 const button = document.querySelector('input');
 
-
-const submitButton = document.querySelector('#submit-rating');
-const respondRating = document.getElementById('response-rating');
+const submitRating = document.querySelector('#submit-rating');
+const submitButton = document.querySelector('#submit-button');
+const respondRating = document.querySelector('#response-rating');
 submitButton.addEventListener('click', generateThankyou);
 
 function generateThankyou(){
-    submitButton.classList.add('hidden');
+    submitRating.classList.add('hidden');
     respondRating.classList.remove('hidden');
 }
