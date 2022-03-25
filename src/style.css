@@ -5,11 +5,26 @@
 html, body {
     height: 100%;
     font-family: "Overpass";
-  }
+    overflow: hidden;
+}
 
+/* following up this to select .rating-number-radio https://markheath.net/post/customize-radio-button-css */
+.rating-numbers-radio input[type="radio"]{
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+.rating-numbers-radio input[type="radio"]:checked + label{ 
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+}
+.rating-numbers-radio input[type="radio"]:focus + label{ 
+    background-color: hsl(25, 97%, 53%)
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
